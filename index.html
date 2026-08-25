@@ -50,11 +50,15 @@
           <p class="hero-copy mb-5">See the day-to-day work behind the measures—and understand what your next decision may set in motion.</p>
           <button class="trial-banner trial-banner-v6 trial-banner-action" type="button" data-bs-toggle="modal" data-bs-target="#contactModal" aria-label="Open contact details for the January 2027 school trials">
             <span class="trial-banner-label">January 2027 trials</span>
-            <span class="trial-banner-copy"><strong>Two school trials planned.</strong><span>No fee, with training and direct help throughout.</span></span>
+            <span class="trial-banner-copy">
+              <strong>Two school trials planned.</strong>
+              <span>No fee, with training and direct help throughout.</span>
+              <span class="trial-banner-cta">If you are interested, do get in touch <b aria-hidden="true">&rarr;</b></span>
+            </span>
           </button>
           <div class="d-flex flex-wrap gap-3 hero-actions">
-            <button class="btn btn-brand btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">January 2027 trials</button>
-            <button class="btn btn-outline-brand btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Ask about Ptolemy</button>
+            <button class="btn btn-brand btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Enquire about the trials <span class="action-arrow" aria-hidden="true">&rarr;</span></button>
+            <button class="btn btn-outline-brand btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Ask about Ptolemy <span class="action-arrow" aria-hidden="true">&rarr;</span></button>
           </div>
         </div>
         <div class="col-lg-6 hero-journey-column">
@@ -306,24 +310,43 @@
   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
-        <div class="modal-header border-0 px-4 px-md-5 pt-4 pt-md-5">
+        <div class="modal-header contact-modal-header border-0 px-4 px-md-5 pt-4 pt-md-5">
           <div>
-            <span class="modal-kicker">Contact Ptolemy</span>
-            <h2 class="modal-title" id="contactModalTitle">Start a conversation.</h2>
+            <h2 class="modal-title" id="contactModalTitle">Start a conversation</h2>
             <p class="contact-modal-lead">Find out more about the school trial and maybe even register some interest, or ask to learn more about Ptolemy itself and how it works.</p>
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close contact details"></button>
+          <button type="button" class="btn-close contact-modal-close" data-bs-dismiss="modal" aria-label="Close contact details"></button>
         </div>
         <div class="modal-body px-4 px-md-5 pb-4 pb-md-5">
           <div class="contact-modal-grid">
-            <section>
+            <section class="contact-option">
+              <span class="contact-option-kicker">School trials</span>
               <h3>January 2027 school trial</h3>
-              <p>Email <a href="mailto:info@ptolemyeducation.co.uk?subject=January%202027%20trial">info@ptolemyeducation.co.uk</a> with the subject “January 2027 trial”.</p>
+              <p>Find out more about the supported, no-fee trial or register your interest.</p>
+              <a class="contact-option-action" href="mailto:info@ptolemyeducation.co.uk?subject=January%202027%20trial">
+                <span>Email about the trial<small>info@ptolemyeducation.co.uk</small></span>
+                <b aria-hidden="true">&rarr;</b>
+              </a>
             </section>
-            <section>
+            <section class="contact-option">
+              <span class="contact-option-kicker">Product enquiries</span>
               <h3>General product enquiry</h3>
-              <p>Email <a href="mailto:info@ptolemyeducation.co.uk">info@ptolemyeducation.co.uk</a> or telephone <a href="tel:+447778728477">07778 728 477</a>.</p>
+              <p>Ask about Ptolemy itself, how it works, or whether it might suit your school.</p>
+              <a class="contact-option-action" href="mailto:info@ptolemyeducation.co.uk">
+                <span>Email about Ptolemy<small>info@ptolemyeducation.co.uk</small></span>
+                <b aria-hidden="true">&rarr;</b>
+              </a>
             </section>
+          </div>
+
+          <div class="copy-email-panel">
+            <div>
+              <span>Prefer to use your own email service?</span>
+              <strong>info@ptolemyeducation.co.uk</strong>
+              <a class="copy-panel-phone" href="tel:+447778728477">Telephone: 07778 728 477</a>
+            </div>
+            <button class="copy-email-button" type="button" data-copy-email="info@ptolemyeducation.co.uk">Copy email address</button>
+            <p class="copy-email-status" role="status" aria-live="polite"></p>
           </div>
 
           <aside class="privacy-notice" aria-label="Privacy information">
@@ -346,12 +369,6 @@
   <script src="assets/site.js"></script>
 </body>
 </html>
-
-
-
-
-
-
 
 
 

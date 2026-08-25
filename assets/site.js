@@ -29,3 +29,42 @@ document.querySelectorAll("#siteNav .nav-link, #siteNav [data-bs-toggle='modal']
     }
   });
 });
+
+const copyEmailButton = document.querySelector("[data-copy-email]");
+const copyEmailStatus = document.querySelector(".copy-email-status");
+
+const copyText = async text => {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const temporaryField = document.createElement("textarea");
+  temporaryField.value = text;
+  temporaryField.setAttribute("readonly", "");
+  temporaryField.style.position = "fixed";
+  temporaryField.style.opacity = "0";
+  document.body.appendChild(temporaryField);
+  temporaryField.select();
+  const copied = document.execCommand("copy");
+  temporaryField.remove();
+  if (!copied) throw new Error("Copy command was not available");
+};
+
+if (copyEmailButton && copyEmailStatus) {
+  const originalButtonText = copyEmailButton.textContent;
+
+  copyEmailButton.addEventListener("click", async () => {
+    try {
+      await copyText(copyEmailButton.dataset.copyEmail);
+      copyEmailButton.textContent = "Copied";
+      copyEmailStatus.textContent = "Email address copied to your clipboard.";
+      window.setTimeout(() => {
+        copyEmailButton.textContent = originalButtonText;
+        copyEmailStatus.textContent = "";
+      }, 2600);
+    } catch (error) {
+      copyEmailStatus.textContent = "Copying was unavailable. Select the email address above to copy it manually.";
+    }
+  });
+}
