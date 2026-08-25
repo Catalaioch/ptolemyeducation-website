@@ -43,7 +43,7 @@
     <div class="hero-watermark" aria-hidden="true"></div>
     <div class="container position-relative">
       <div class="row align-items-center min-vh-100 py-5 gy-5">
-        <div class="col-lg-6 pt-5">
+        <div class="col-lg-6 pt-5 hero-copy-column">
           <p class="eyebrow mb-4">School improvement, seen more clearly</p>
           <h1 class="display-title mb-4">A new class<br>of <span>evidence.</span></h1>
           <p class="hero-lead mb-4">Your school already analyses student outcomes, rates of progress and teaching quality. Ptolemy helps you go one level deeper.</p>
@@ -52,12 +52,12 @@
             <span class="trial-banner-label">January 2027 trials</span>
             <span class="trial-banner-copy"><strong>Two school trials planned.</strong><span>No fee, with training and direct help throughout.</span></span>
           </button>
-          <div class="d-flex flex-wrap gap-3">
+          <div class="d-flex flex-wrap gap-3 hero-actions">
             <button class="btn btn-brand btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">January 2027 trials</button>
             <button class="btn btn-outline-brand btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Ask about Ptolemy</button>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 hero-journey-column">
           <div class="depth-card" aria-label="The self-evaluation journey from established evidence to the Ptolemy dataset">
             <div class="journey-head">
               <p class="depth-kicker">The self-evaluation journey</p>
@@ -73,11 +73,19 @@
                 <div class="evidence-layer">
                   <span>01</span><strong>Student outcomes</strong><small>Where are we?</small>
                 </div>
-                <div class="journey-arrow" aria-hidden="true"><i></i></div>
+                <div class="journey-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3v15M6.5 12.5 12 18l5.5-5.5" />
+                  </svg>
+                </div>
                 <div class="evidence-layer layer-two">
                   <span>02</span><strong>Student progress</strong><small>What value have we added?</small>
                 </div>
-                <div class="journey-arrow arrow-two" aria-hidden="true"><i></i></div>
+                <div class="journey-arrow arrow-two" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 3v15M6.5 12.5 12 18l5.5-5.5" />
+                  </svg>
+                </div>
                 <div class="evidence-layer layer-three">
                   <span>03</span><strong>Teaching quality</strong><small>How well are we teaching?</small>
                 </div>
@@ -85,7 +93,9 @@
             </div>
 
             <div class="stage-connector" aria-label="Choose to go one level deeper">
-              <i aria-hidden="true"></i>
+              <svg viewBox="0 0 32 48" aria-hidden="true" focusable="false">
+                <path d="M16 3v34M7 28l9 9 9-9" />
+              </svg>
             </div>
 
             <div class="journey-section deeper-section">
@@ -336,6 +346,10 @@
   <script src="assets/site.js"></script>
 </body>
 </html>
+
+
+
+
 
 
 

@@ -1695,3 +1695,255 @@ footer {
 
 /* Consolidated from assets/site-v18.css */
 
+
+
+/* Consolidated from assets/site-v19.css */
+@media (max-width: 991.98px) {
+  .hero {
+    padding-top: 3.75rem;
+  }
+
+  .hero .row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 1.25rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .hero-copy-column {
+    display: contents;
+    padding-top: 0 !important;
+  }
+
+  .hero-copy-column > .eyebrow {
+    order: 1;
+  }
+
+  .hero-copy-column > .display-title {
+    order: 2;
+  }
+
+  .hero-copy-column > .hero-lead {
+    order: 3;
+  }
+
+  .hero-copy-column > .hero-copy {
+    order: 4;
+  }
+
+  .hero-journey-column {
+    order: 5;
+    width: 100%;
+    margin: 0 0 2rem;
+    padding: 0;
+  }
+
+  .hero-copy-column > .trial-banner-action {
+    order: 6;
+  }
+
+  .hero-copy-column > .hero-actions {
+    order: 7;
+  }
+}
+
+
+/* Consolidated from assets/site-v20.css */
+@media (max-width: 991.98px) {
+  .hero {
+    padding-top: calc(4.5rem + env(safe-area-inset-top));
+  }
+
+  .hero .row {
+    padding-top: 1.5rem !important;
+  }
+}
+
+
+/* Consolidated from assets/site-v21.css */
+@media (max-width: 991.98px) {
+  .hero {
+    padding-top: calc(6.25rem + env(safe-area-inset-top));
+  }
+}
+
+
+/* Consolidated from assets/site-v22.css */
+.journey-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  padding: .7rem 1rem;
+  text-align: center;
+}
+
+.journey-stage > span {
+  min-width: 5.4rem;
+  min-height: 1.8rem;
+  border-right: 0;
+}
+
+.journey-stage strong,
+.journey-stage small {
+  text-align: center;
+}
+
+.familiar-flow {
+  display: grid;
+  justify-items: center;
+  gap: .2rem;
+  padding: .65rem;
+}
+
+.evidence-layer,
+.layer-two,
+.layer-three {
+  width: min(100%, 30rem);
+  margin-left: 0;
+}
+
+.journey-arrow,
+.arrow-two {
+  position: relative;
+  width: 2rem;
+  height: 1.35rem;
+  margin: 0 auto;
+}
+
+.journey-arrow i {
+  position: absolute;
+  top: .05rem;
+  left: 50%;
+  width: 0;
+  height: .85rem;
+  border-left: 2px solid #bb8120;
+  background: none;
+  transform: translateX(-50%);
+}
+
+.journey-arrow i::after {
+  position: absolute;
+  bottom: -.02rem;
+  left: -.32rem;
+  width: .62rem;
+  height: .62rem;
+  border-right: 2px solid #bb8120;
+  border-bottom: 2px solid #bb8120;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.stage-connector {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2.9rem;
+  margin: .25rem auto;
+}
+
+.stage-connector i {
+  position: absolute;
+  top: .1rem;
+  left: 50%;
+  width: 0;
+  height: 2rem;
+  border: 0;
+  border-left: 3px solid #3b8fc7;
+  transform: translateX(-50%);
+}
+
+.stage-connector i::after {
+  position: absolute;
+  bottom: -.02rem;
+  left: -.4rem;
+  width: .78rem;
+  height: .78rem;
+  border: 0;
+  border-right: 3px solid #3b8fc7;
+  border-bottom: 3px solid #3b8fc7;
+  content: "";
+  transform: rotate(45deg);
+}
+
+@media (max-width: 767.98px) {
+  .journey-stage {
+    padding: .65rem .75rem;
+  }
+
+  .evidence-layer,
+  .layer-two,
+  .layer-three {
+    margin-left: 0;
+  }
+
+  .journey-arrow,
+  .arrow-two {
+    margin-left: auto;
+  }
+}
+
+
+/* Consolidated from assets/site-v23.css */
+.journey-arrow,
+.arrow-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1.55rem;
+  margin: 0;
+  color: #bb8120;
+}
+
+.journey-arrow svg {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: visible;
+}
+
+.journey-arrow path,
+.stage-connector path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.journey-arrow path {
+  stroke-width: 2;
+}
+
+.stage-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  margin: .25rem 0;
+  color: #3b8fc7;
+}
+
+.stage-connector svg {
+  display: block;
+  width: 2rem;
+  height: 3rem;
+  overflow: visible;
+}
+
+.stage-connector path {
+  stroke-width: 3;
+}
+
+@media (max-width: 767.98px) {
+  .journey-arrow,
+  .arrow-two {
+    margin: 0;
+  }
+}
